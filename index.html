@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>The Secret Menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ======================== SCREEN 1: DRINKS MENU ======================== -->
+  <section id="screen-menu" class="screen active">
+    <div class="menu-container">
+
+      <div class="menu-header">
+        <svg class="ornament-top" viewBox="0 0 200 30" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10,15 Q50,0 100,15 Q150,30 190,15" fill="none" stroke="currentColor" stroke-width="0.8"/>
+          <circle cx="100" cy="15" r="2.5" fill="currentColor"/>
+          <circle cx="70" cy="10" r="1.5" fill="currentColor"/>
+          <circle cx="130" cy="20" r="1.5" fill="currentColor"/>
+        </svg>
+        <h1 class="menu-title">Cafe Blue Stripes</h1>
+        <p class="menu-subtitle">Curated Selections</p>
+        <svg class="ornament-bottom" viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+          <line x1="30" y1="10" x2="85" y2="10" stroke="currentColor" stroke-width="0.6"/>
+          <circle cx="100" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="0.8"/>
+          <circle cx="100" cy="10" r="1" fill="currentColor"/>
+          <line x1="115" y1="10" x2="170" y2="10" stroke="currentColor" stroke-width="0.6"/>
+        </svg>
+      </div>
+
+      <!-- Drink 1 -->
+      <div class="menu-item">
+        <div class="drink-icon">
+          <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+            <rect x="18" y="12" width="24" height="28" rx="3" fill="none" stroke="currentColor" stroke-width="1.2"/>
+            <line x1="22" y1="22" x2="38" y2="22" stroke="currentColor" stroke-width="0.6" opacity="0.5"/>
+            <rect x="26" y="40" width="8" height="8" rx="1" fill="none" stroke="currentColor" stroke-width="0.8"/>
+            <ellipse cx="30" cy="10" rx="6" ry="2" fill="none" stroke="currentColor" stroke-width="0.8"/>
+          </svg>
+        </div>
+        <div class="drink-details">
+          <h2 class="drink-name">Old Fashioned</h2>
+          <p class="drink-description">Bourbon, Demerara sugar, Angostura bitters &mdash; stirred slow, served with a twist of orange.</p>
+          <div class="drink-footer">
+            <span class="drink-price">&dollar;14</span>
+            <a href="#" class="read-more" data-target="screen-question">Read More &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <svg class="divider" viewBox="0 0 200 12" xmlns="http://www.w3.org/2000/svg">
+        <line x1="20" y1="6" x2="80" y2="6" stroke="currentColor" stroke-width="0.4"/>
+        <path d="M85,6 Q100,0 115,6" fill="none" stroke="currentColor" stroke-width="0.6"/>
+        <line x1="120" y1="6" x2="180" y2="6" stroke="currentColor" stroke-width="0.4"/>
+      </svg>
+
+      <!-- Drink 2 -->
+      <div class="menu-item">
+        <div class="drink-icon">
+          <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18,14 L24,44 L36,44 L42,14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+            <line x1="25" y1="44" x2="35" y2="44" stroke="currentColor" stroke-width="1.2"/>
+            <line x1="27" y1="44" x2="30" y2="52" stroke="currentColor" stroke-width="0.8"/>
+            <line x1="33" y1="44" x2="30" y2="52" stroke="currentColor" stroke-width="0.8"/>
+            <ellipse cx="30" cy="52" rx="8" ry="2" fill="none" stroke="currentColor" stroke-width="0.8"/>
+            <ellipse cx="30" cy="28" rx="5" ry="3" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.4"/>
+          </svg>
+        </div>
+        <div class="drink-details">
+          <h2 class="drink-name">Espresso Martini</h2>
+          <p class="drink-description">Vodka, fresh espresso, coffee liqueur &mdash; shaken until frothy, crowned with three beans.</p>
+          <div class="drink-footer">
+            <span class="drink-price">&dollar;16</span>
+            <a href="#" class="read-more" data-target="screen-question">Read More &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <svg class="divider" viewBox="0 0 200 12" xmlns="http://www.w3.org/2000/svg">
+        <line x1="20" y1="6" x2="80" y2="6" stroke="currentColor" stroke-width="0.4"/>
+        <path d="M85,6 Q100,0 115,6" fill="none" stroke="currentColor" stroke-width="0.6"/>
+        <line x1="120" y1="6" x2="180" y2="6" stroke="currentColor" stroke-width="0.4"/>
+      </svg>
+
+      <!-- Drink 3 -->
+      <div class="menu-item">
+        <div class="drink-icon">
+          <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+            <rect x="16" y="16" width="22" height="26" rx="2" fill="none" stroke="currentColor" stroke-width="1.2"/>
+            <path d="M38,20 Q48,20 48,29 Q48,38 38,38" fill="none" stroke="currentColor" stroke-width="1"/>
+            <line x1="20" y1="28" x2="34" y2="28" stroke="currentColor" stroke-width="0.5" opacity="0.4"/>
+            <circle cx="27" cy="22" r="1.5" fill="none" stroke="currentColor" stroke-width="0.6" opacity="0.5"/>
+            <line x1="27" y1="42" x2="27" y2="50" stroke="currentColor" stroke-width="0.8"/>
+            <ellipse cx="27" cy="52" rx="7" ry="2" fill="none" stroke="currentColor" stroke-width="0.8"/>
+          </svg>
+        </div>
+        <div class="drink-details">
+          <h2 class="drink-name">Negroni</h2>
+          <p class="drink-description">Gin, Campari, sweet vermouth &mdash; equal parts, stirred gently, served over a single large cube.</p>
+          <div class="drink-footer">
+            <span class="drink-price">&dollar;15</span>
+            <a href="#" class="read-more" data-target="screen-question">Read More &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-footer-ornament">
+        <svg viewBox="0 0 200 40" xmlns="http://www.w3.org/2000/svg">
+          <path d="M60,20 Q80,8 100,20 Q120,32 140,20" fill="none" stroke="currentColor" stroke-width="0.6"/>
+          <path d="M50,20 Q80,2 100,20 Q120,38 150,20" fill="none" stroke="currentColor" stroke-width="0.4" opacity="0.5"/>
+          <circle cx="100" cy="20" r="2" fill="currentColor" opacity="0.6"/>
+        </svg>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================== SCREEN 2: THE BIG QUESTION ======================== -->
+  <section id="screen-question" class="screen">
+    <div class="question-container">
+
+      <button class="back-btn" data-target="screen-menu">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="22" height="22">
+          <path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Back to menu</span>
+      </button>
+
+      <div class="letter-section">
+        <svg class="ornament-letter" viewBox="0 0 200 30" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30,25 Q50,5 70,15 Q90,25 100,10 Q110,25 130,15 Q150,5 170,25" fill="none" stroke="currentColor" stroke-width="0.6"/>
+        </svg>
+
+        <!-- ============ EDIT YOUR MESSAGE BELOW ============ -->
+        <p class="love-letter">
+          You know, it started with just a drink, a conversation, and maybe a little too much eye contact. Somewhere between the awkward silences and the uncontrollable laughter, something shifted. I stopped looking forward to plans and started looking forward to <em>you</em>. Every ordinary moment feels a little more alive when you're in it. So here I am, at this table, with this ridiculous menu, trying to ask you something I've been thinking about for a while&hellip;
+        </p>
+        <!-- ============ EDIT YOUR MESSAGE ABOVE ============ -->
+
+        <svg class="ornament-letter" viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+          <line x1="40" y1="10" x2="90" y2="10" stroke="currentColor" stroke-width="0.5"/>
+          <circle cx="100" cy="10" r="2" fill="currentColor"/>
+          <line x1="110" y1="10" x2="160" y2="10" stroke="currentColor" stroke-width="0.5"/>
+        </svg>
+      </div>
+
+      <div class="question-section">
+        <h2 class="the-question">Would you like to be my girlfriend?</h2>
+
+        <div class="answer-buttons">
+          <button class="btn btn-yes" id="btn-yes">Yes</button>
+          <button class="btn btn-funny-no" id="btn-funny-no">No <span class="btn-subtext">(but basically yes, coz I just like to say no)</span></button>
+          <button class="btn btn-no" id="btn-no">No</button>
+        </div>
+      </div>
+
+      <!-- LIMCA Slide-Up Panel -->
+      <div class="limca-overlay" id="limca-overlay">
+        <div class="limca-panel" id="limca-panel">
+          <h2 class="limca-title">LIMCA?</h2>
+          <div class="limca-buttons">
+            <button class="btn btn-limca-yes" id="btn-limca-yes">LIMCA</button>
+            <button class="btn btn-limca-no" id="btn-limca-no">No</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================== SCREEN 3: PROMOTION PAGE ======================== -->
+  <section id="screen-promo" class="screen">
+    <div class="promo-container">
+
+      <div class="promo-banner">
+        <div class="promo-icon">
+          <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24,4 L28,16 L40,16 L30,24 L34,36 L24,28 L14,36 L18,24 L8,16 L20,16 Z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <h1 class="promo-heading">Career Update</h1>
+        <p class="promo-subheading">New Role Announcement</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-item new-role">
+          <div class="timeline-dot dot-new"></div>
+          <div class="timeline-card card-new">
+            <!-- ============ Drop photo-new.jpg in secret-menu/ folder ============ -->
+            <div class="card-photo-wrap">
+              <img class="card-photo" src="photo-new.jpg" alt="Photo"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="card-photo-placeholder">
+                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" width="22" height="22">
+                  <circle cx="24" cy="18" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                  <path d="M8,44 C8,34 16,28 24,28 C32,28 40,34 40,44" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                </svg>
+              </div>
+            </div>
+            <div class="card-info">
+              <span class="role-badge badge-new">New Role</span>
+              <h3 class="role-title">Permanent Employee</h3>
+              <p class="role-division">Official Boyfriend</p>
+              <p class="role-date">Starting Today &hearts;</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-arrow">
+          <svg viewBox="0 0 24 40" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6,16 L12,6 L18,16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="12" y1="10" x2="12" y2="38" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+        </div>
+
+        <div class="timeline-item old-role">
+          <div class="timeline-dot dot-old"></div>
+          <div class="timeline-card card-old">
+            <!-- ============ Drop photo-old.jpg in secret-menu/ folder ============ -->
+            <div class="card-photo-wrap">
+              <img class="card-photo" src="photo-old.jpg" alt="Photo"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="card-photo-placeholder">
+                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" width="22" height="22">
+                  <circle cx="24" cy="18" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                  <path d="M8,44 C8,34 16,28 24,28 C32,28 40,34 40,44" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                </svg>
+              </div>
+            </div>
+            <div class="card-info">
+              <span class="role-badge badge-old">Previous Role</span>
+              <h3 class="role-title">Temporary Employee</h3>
+              <p class="role-division">Situationship Division</p>
+              <p class="role-date">Jan'26 &mdash; Today</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="promo-closing">
+        <svg class="ornament-closing" viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+          <line x1="30" y1="10" x2="85" y2="10" stroke="currentColor" stroke-width="0.5"/>
+          <circle cx="100" cy="10" r="2" fill="currentColor"/>
+          <line x1="115" y1="10" x2="170" y2="10" stroke="currentColor" stroke-width="0.5"/>
+        </svg>
+        <p class="closing-message">Welcome aboard.<br>No probation period. No notice period.<br><strong>To The Fun Times</strong></p>
+        <div class="hearts-float" id="hearts-float"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
