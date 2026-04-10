@@ -14,12 +14,12 @@
     }
   }
 
-  document.querySelectorAll('.read-more').forEach(link => {
-    link.addEventListener('click', function (e) {
-      e.preventDefault();
+  var btnViewMore = document.getElementById('btn-view-more');
+  if (btnViewMore) {
+    btnViewMore.addEventListener('click', function () {
       showScreen(this.dataset.target);
     });
-  });
+  }
 
   document.querySelectorAll('.back-btn').forEach(btn => {
     btn.addEventListener('click', function () {
@@ -102,7 +102,8 @@
       var msg = document.createElement('div');
       msg.className = 'no-option-msg';
       msg.textContent = "not an option, this ain\u2019t consensual :p";
-      msg.style.left = cx + 'px';
+      var clampedX = Math.max(20, Math.min(cx, window.innerWidth - 20));
+      msg.style.left = clampedX + 'px';
       msg.style.top = cy + 'px';
       document.body.appendChild(msg);
 
@@ -110,15 +111,18 @@
     });
   }
 
-  btnNo.addEventListener('pointerdown', function (e) {
-    e.preventDefault();
-    dodgeButton();
-  });
+  var lastDodgeTime = 0;
 
-  btnNo.addEventListener('touchstart', function (e) {
+  function handleDodge(e) {
     e.preventDefault();
+    var now = Date.now();
+    if (now - lastDodgeTime < 300) return;
+    lastDodgeTime = now;
     dodgeButton();
-  }, { passive: false });
+  }
+
+  btnNo.addEventListener('pointerdown', handleDodge);
+  btnNo.addEventListener('touchstart', handleDodge, { passive: false });
 
   /* ====================== YES / FUNNY-NO → LIMCA ====================== */
 
