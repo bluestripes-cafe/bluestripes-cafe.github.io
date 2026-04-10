@@ -151,34 +151,12 @@ body {
   margin-bottom: 10px;
 }
 
-.drink-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .drink-price {
   font-family: var(--font-display);
   font-weight: 600;
   font-size: 1.1rem;
   color: var(--accent);
-}
-
-.read-more {
-  font-family: var(--font-body);
-  font-size: 0.82rem;
-  color: var(--accent);
-  text-decoration: none;
-  letter-spacing: 0.04em;
-  transition: color 0.2s, letter-spacing 0.2s;
-  border-bottom: 1px solid transparent;
-}
-
-.read-more:hover,
-.read-more:active {
-  color: var(--text);
-  border-bottom-color: var(--accent-light);
-  letter-spacing: 0.08em;
+  margin-top: 4px;
 }
 
 /* Dividers */
@@ -187,6 +165,33 @@ body {
   height: auto;
   color: var(--accent-light);
   opacity: 0.6;
+}
+
+.btn-view-more {
+  margin-top: 28px;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--text);
+  background: linear-gradient(135deg, var(--gold-bg), #EDD9A3);
+  border: none;
+  border-radius: 12px;
+  padding: 15px 36px;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(184, 150, 62, 0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn-view-more:hover,
+.btn-view-more:active {
+  box-shadow: 0 4px 20px rgba(184, 150, 62, 0.25);
+  transform: translateY(-1px);
+}
+
+.btn-view-more:active {
+  transform: scale(0.97);
 }
 
 .menu-footer-ornament {
@@ -238,7 +243,7 @@ body {
 
 .letter-section {
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 0;
 }
 
 .ornament-letter {
@@ -251,10 +256,10 @@ body {
 
 .love-letter {
   font-family: var(--font-body);
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.75;
   color: var(--text);
-  text-align: left;
+  text-align: justify;
   padding: 0 4px;
 }
 
@@ -265,7 +270,7 @@ body {
 
 .question-section {
   text-align: center;
-  margin-top: auto;
+  margin-top: 0;
   padding-top: 12px;
 }
 
@@ -398,7 +403,6 @@ body {
   font-style: italic;
   font-size: 0.88rem;
   color: var(--text);
-  white-space: nowrap;
   pointer-events: none;
   opacity: 0;
   animation: msgPopIn 0.5s ease-out 0.3s forwards;
@@ -409,6 +413,8 @@ body {
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+  max-width: calc(100vw - 40px);
+  text-align: center;
 }
 
 @keyframes msgPopIn {
